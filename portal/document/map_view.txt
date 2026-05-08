@@ -1,0 +1,114 @@
+views/
+├── v1/
+│   ├── master
+|   |   ├── master-public.blade.php
+|   |   ├── master-admin.blade.php
+|   |   ├── master-user.blade.php
+|   ├── components
+|   │   ├── navigation
+|   |   |   ├── public.blade.php
+|   |   |   ├── admin.blade.php
+|   |   |   ├── user.blade.php
+|   |   ├── headers
+|   |   ├── footers
+|   ├── views
+|   |   ├── home
+|   |   ├── chat
+|   |   ├── order
+|   |   ├── reports
+|   ├── partials
+|   |   ├── ads.blade.php
+|   |   ├── sidebar.blade.php
+|   ├── public
+|   |   ├── registration.blade.php
+|   |   ├── login.blade.php
+├── v2/
+└── v2.2/
+https://stackoverflow.com/questions/1291942/what-does-javascriptvoid0-mean
+
+
+        $(document).ready(function(){
+            $('#registerLb').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'register',
+                    success: function(data) {
+                        console.log(data);
+                        $('#formLogin').hide();
+                        $('#formPublic').append(data);
+                    }
+                });
+            });
+
+            $("#btnLogin").click(function() {
+                password= $('.pass').val();
+                email= $('.email').val();
+                $("#loading").show();
+                $.ajax({
+                        method: "POST",
+                        url: "{{  route('api.post.login') }}",
+                        dataType: "json",
+                        data:{ username: email,
+                                password: password
+                        },
+                    })
+                    .done(function(data) {
+                        console.log(data);
+                        window.location.href = "{{  route('home') }}";
+                        $("#loading").hide();
+                    })
+                    .fail(function() {
+                        alert("Xin chia buon voi ban. tai khoan hoac ");
+                    });
+            });
+
+        });
+
+<script type="text/javascript">
+    $('#signInLb').click(function() {
+        $('#formRegister').remove();
+        $('#formLogin').show();
+	});
+    $("#registerBtn").click(function() {
+        console.log($("#email").val());
+        console.log($("#username").val());
+        console.log($("#password").val());
+        $.ajax({
+                method: "POST",
+                url: "{{route('api.post.register')}}",
+                dataType: "json",
+                data:{
+                    email: $("#email").val(),
+                    username: $("#username").val(),
+                    password: $("#password").val()
+                },
+            })
+            .done(function(data) {
+                console.log(data);
+                window.location.href = "{{  route('login') }}";
+            })
+            .fail(function() {
+                alert("Da co loi xay ra.");
+            });
+    });
+
+
+alter table users add first_name  nvarchar(255);
+alter table users add last_name  nvarchar(255);
+alter table users drop COLUMN username;
+ALTER TABLE lamitvndb.sessions ADD id_code varchar(255) NOT NULL;
+</script>
+https://bootcamp.uxdesign.cc/designing-roles-and-permissions-ux-case-study-b1940f5a9aa
+https://dev.to/shanisingh03/how-to-login-with-facebook-in-laravel-124e
+https://www.youtube.com/watch?v=Md5WsLzooNY
+https://viblo.asia/p/dieu-khien-truy-cap-ung-dung-Do754Md4KM6
+https://laravel.com/docs/8.x/authorization
+https://medium.com/@dkhorev/must-have-composer-packages-for-laravel-developers-bbe961c8bbe4
+https://medium.com/@codesparrow_96165/top-8-best-open-source-development-tools-33714b53b059
+https://medium.com/@cosmeescobedo/how-to-find-the-slowest-query-in-your-laravel-application-76ba6de04716
+https://javascript.plainenglish.io/learning-isnt-the-key-to-becoming-a-top-developer-it-s-all-about-building-things-f59ba305bac
+https://medium.com/codex/top-5-chrome-extensions-every-developer-must-have-now-f4d80d66a221
+module google driver:
+enable extensions: extension=fileinfo
+curl.cainfo ="D:\git\portal\cert\cacert.pem"
+openssl.cafile="D:\git\portal\cert\cacert.pem"

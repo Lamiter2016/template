@@ -1,0 +1,14 @@
+https://dev.to/basimghouri/security-in-laravel-how-to-protect-your-app-part-1-2kof
+https://dev.to/pascallandau/how-to-build-a-docker-development-setup-for-php-projects-tutorial-part-1-10km
+https://viblo.asia/p/tim-hieu-ve-authentication-trong-laravel-Ljy5VoG3Kra#_3xac-thuc-nguoi-dung-thu-cong-11
+https://app.pluralsight.com/course-player?clipId=cfe7e757-dfa6-4e96-b4b7-4460030319ea
+
+android
+https://app.pluralsight.com/paths/skills/google-android-associate-developer-aad
+movies:
+- https://subhay.net/phim/nguyen-long-16770/tap-02-233728.html
+
+check_mk
+https://stackoverflow.com/questions/41522605/how-to-check-if-port-is-open-on-a-remote-server-with-batch-file-and-without-thir/41522619
+https://docs.checkmk.com/latest/en/devel_check_plugins.html
+

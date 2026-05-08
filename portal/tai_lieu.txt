@@ -1,0 +1,7 @@
+https://laravel.com/docs/8.x/migrations
+https://laravel.com/docs/8.x/database-testing
+https://fakerphp.github.io/locales/pt_BR/#fakerproviderpt_brperson
+https://phoenixnap.com/kb/how-to-create-new-mysql-user-account-grant-privileges
+https://laravel.com/api/8.x/Illuminate/Contracts/Auth/Guard.html#method_check
+https://laravel.com/docs/8.x/eloquent-resources#introduction
+https://viblo.asia/p/laravel-tuy-bien-chuc-nang-authentication-mac-dinh-cua-laravel-jvElaPyzZkw
